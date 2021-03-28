@@ -24,12 +24,12 @@ def hitung_standar_deviasi(data):
 # Definisikan fungsi untuk menghitung rata-rata dan standar deviasi
 # setiap kolom pada tabel_properti yang diberikan oleh key dict.
 def deskripsi_properti(tabel):
-    for key in ___:
-        print('Rata-rata ' + ___ + ':')
-        print(___) 
-        print('Standar deviasi ' + ___ + ':')
-        print(___)
+    for key in tabel.keys():
+        print('Rata-rata ' + key + ':')
+        print(hitung_rata_rata(tabel[key])) 
+        print('Standar deviasi ' + key + ':')
+        print(hitung_standar_deviasi(tabel[key]))
         print('')
 # Panggil fungsi deskripsi_properti untuk menghitung rata-rata 
 # dan standar deviasi setiap kolom pada tabel_properti
-deskripsi_properti(___)
+deskripsi_properti(tabel_properti)

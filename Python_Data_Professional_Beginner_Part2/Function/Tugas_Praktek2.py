@@ -11,16 +11,16 @@ def hitung_rata_rata(data):
 
 # Definisikan fungsi hitung_standar_deviasi
 def hitung_standar_deviasi(data):
-    rata_rata_data = ___
-    varians = ___
-    for item in ___:
-        varians += (___ – ___) ** ___
-    varians /= ___
-    standar_deviasi = ___ ** (1/2)
-    return ___
+    rata_rata_data = hitung_rata_rata(data)
+    varians = 0
+    for item in data:
+        varians += (item - rata_rata_data) ** 2
+    varians /= len(data)
+    standar_deviasi = varians ** (1/2)
+    return standar_deviasi
 
 # Hitung nilai standar deviasi dari kedua data yang dimiliki
 print('Standar deviasi data1:')
-print(___)
+print(hitung_standar_deviasi(data1))
 print('Standar deviasi data2:')
-print(___)
+print(hitung_standar_deviasi(data2))
