@@ -79,8 +79,8 @@ print(df_load[['tenure','MonthlyCharges','TotalCharges']].describe())
 
 # Masukkan variable
 for col_name in list(['gender','SeniorCitizen','Partner','Dependents','PhoneService','MultipleLines','InternetService','OnlineSecurity','OnlineBackup','DeviceProtection','TechSupport','StreamingTV','StreamingMovies','Contract','PaperlessBilling','PaymentMethod','Churn']):
-print('\nUnique Values Count \033[1m' + 'Before Standardized \033[0m Variable',col_name)
-print(df_load[col_name].value_counts())
+    print('\nUnique Values Count \033[1m' + 'Before Standardized \033[0m Variable',col_name)
+    print(df_load[col_name].value_counts())
 
 df_load = df_load.replace(['Wanita','Laki-Laki','Churn','Iya'],['Female','Male','Yes','Yes'])
 # Masukkan variable
